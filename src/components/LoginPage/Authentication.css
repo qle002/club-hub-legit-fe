@@ -1,0 +1,17 @@
+.Signin {
+    text-align: left;
+}
+
+.Signin-logo {
+    height: 60vmin;
+    vertical-align: middle;
+}
+
+button {
+    background-color: #FF5A6E;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 4px 2px;
+}

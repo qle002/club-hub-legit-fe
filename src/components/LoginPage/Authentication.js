@@ -1,8 +1,16 @@
-import React from "react";
+import React, { Component } from "react";
+import logo from '../../assets/logo.svg';
+import './Authentication.css';
 
 //Basically login page
-function Authentication() {
-  return <div>Please give the code provided by coding-hub</div>;
-}
+export default class Authentication extends Component {
+  render() {
+    return (
+      <div className='Signin'>
+        <img src={logo} className='Login-logo' alt='logo'/>
+        <button id='Signin-button'>Signin with your PSU Account</button>
+      </div>
+    );
+  };
+};
 
-export default Authentication;
