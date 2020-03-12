@@ -1,12 +1,8 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
-import Navbar from "./components/Navbar";
-import Login from "./components/Authentication";
-import ClubInfo from "./components/ClubInfo";
-import PageNotFound from "./components/PageNotFound";
+
+import {Home, About, Navbar, Login, ClubInfo, PageNotFound} from "./components";
 
 function App() {
   return (
@@ -18,8 +14,8 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
         <Route path="/login" component={Login} />
-        <Route path="/club" component={ClubInfo} />
-        <Route path="/" component={PageNotFound} />
+        <Route path="/club/:id" component={ClubInfo} />
+        <Route component={PageNotFound} />
       </Switch>
     </BrowserRouter>
   );
